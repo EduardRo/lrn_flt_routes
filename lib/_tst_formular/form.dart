@@ -9,19 +9,17 @@ class FormWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
-      child: Container(
-        child: Form(
-            key: _formKey,
-            child: Column(
-              children: [
-                TextFormField(),
-                TextFormField(),
-                TextFormField(),
-                TextFormField(),
-                TextFormField(),
-              ],
-            )),
-      ),
+      child: Form(
+          key: _formKey,
+          child: Column(
+            children: [
+              TextFormField(),
+              TextFormField(),
+              TextFormField(),
+              TextFormField(),
+              TextFormField(),
+            ],
+          )),
     );
   }
 }
