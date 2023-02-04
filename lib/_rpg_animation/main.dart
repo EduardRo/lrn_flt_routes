@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:lrn_flt_routes/_tst_formular/form2.dart';
+import 'rpg_game.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
@@ -11,8 +12,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: 'this is the title',
-      home: FormWidget(),
+      debugShowCheckedModeBanner: false,
+      home: RPGGame(),
     );
   }
 }
