@@ -38,7 +38,7 @@ class _RPGGameState extends State<RPGGame> implements GameListener {
         directional: JoystickDirectional(),
       ),
       map: WorldMapByTiled(
-        'tilechart.json',
+        'tiled/tilechart.json',
         forceTileSize: Vector2(tileSize, tileSize),
       ),
       lightingColorGame: Colors.black.withOpacity(0.6),
