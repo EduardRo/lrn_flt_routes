@@ -5,14 +5,18 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: const [
-        Placeholder(),
-        Text(
-          'Home Page',
-          selectionColor: Colors.blue,
-        )
-      ],
+    return MaterialApp(
+      title: 'this is title',
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('title'),
+        ),
+        body: Column(
+          children: const [
+            Text('this is the body d'),
+          ],
+        ),
+      ),
     );
   }
 }

@@ -12,19 +12,17 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return ThemeProvider(
-      child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
-        darkTheme: ThemeData(
-          brightness: Brightness.dark,
-          useMaterial3: true,
-          /* dark theme settings */
-        ),
-        onGenerateRoute: RouteGenerator.controllerRoute,
-        initialRoute: '/',
-        //home: const HomePage(),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Demo',
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+        useMaterial3: true,
+        /* dark theme settings */
       ),
+      onGenerateRoute: RouteGenerator.controllerRoute,
+      initialRoute: '/',
+      //home: const HomePage(),
     );
   }
 }
