@@ -8,6 +8,8 @@ class FirstPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    late String as = 'stringss1';
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Routing App'),
@@ -28,7 +30,7 @@ class FirstPage extends StatelessWidget {
                   context,
                   '/second',
                   arguments: ScreenArguments(
-                    'valoare1',
+                    as,
                     'valoare2',
                     'valoare3',
                     'valoare4',
