@@ -52,6 +52,16 @@ class SecondPage extends StatelessWidget {
               r5.toString(),
               style: const TextStyle(fontSize: 20),
             ),
+            ElevatedButton(
+              child: const Text('Go to third'),
+              onPressed: () {
+                // Pushing a route directly, WITHOUT using a named route
+                Navigator.pushNamed(
+                  context,
+                  '/third',
+                );
+              },
+            )
           ],
         ),
       ),

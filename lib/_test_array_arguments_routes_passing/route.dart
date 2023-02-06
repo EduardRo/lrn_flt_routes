@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'page3.dart';
 import 'page1.dart';
 import 'page2.dart';
 
@@ -10,7 +11,7 @@ class RouteGenerator {
 
     switch (settings.name) {
       case '/':
-        return MaterialPageRoute(builder: (_) => const FirstPage());
+        return MaterialPageRoute(builder: (context) => const FirstPage());
       case '/second':
         // ignore: unrelated_type_equality_checks
 
@@ -23,7 +24,10 @@ class RouteGenerator {
               r4: argument.r4,
               r5: argument.r5);
         });
-
+      case '/third':
+        return MaterialPageRoute(
+            builder: (_) => const ThirdPage(
+                r1: 'df', r2: 'dd', r3: 'dd', r4: 'fff', r5: 'r5'));
       default:
         return _errorRoute();
     }

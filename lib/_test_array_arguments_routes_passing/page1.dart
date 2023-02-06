@@ -8,7 +8,8 @@ class FirstPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    late String as = 'stringss1';
+    late String asvar = 'stringss12';
+    late String path = '/second';
 
     return Scaffold(
       appBar: AppBar(
@@ -28,10 +29,10 @@ class FirstPage extends StatelessWidget {
                 // Pushing a route directly, WITHOUT using a named route
                 Navigator.pushNamed(
                   context,
-                  '/second',
+                  path,
                   arguments: ScreenArguments(
-                    as,
-                    'valoare2',
+                    asvar,
+                    path,
                     'valoare3',
                     'valoare4',
                     'valoare5',

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class SecondPage extends StatelessWidget {
+class ThirdPage extends StatelessWidget {
   // This is a String for the sake of an example.
   // You can use any type you want.
   //final String data;
 
-  const SecondPage({
+  const ThirdPage({
     Key? key,
     required this.r1,
     required this.r2,
@@ -29,7 +29,7 @@ class SecondPage extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             const Text(
-              'Second Page',
+              'Third Page',
               style: TextStyle(fontSize: 50),
             ),
             Text(
@@ -52,6 +52,14 @@ class SecondPage extends StatelessWidget {
               r5.toString(),
               style: const TextStyle(fontSize: 20),
             ),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(
+                    context,
+                    '/',
+                  );
+                },
+                child: const Text('go home'))
           ],
         ),
       ),
