@@ -28,6 +28,33 @@ class SecondPage extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
+            Form(
+                child: Column(
+              children: [
+                TextFormField(
+                  decoration: const InputDecoration(
+                    hintText: 'Enter your email',
+                  ),
+                  validator: (String? value) {
+                    if (value == null || value.isEmpty) {
+                      return 'Please enter some text';
+                    }
+                    return null;
+                  },
+                ),
+                TextFormField(
+                  decoration: const InputDecoration(
+                    hintText: 'Enter the name',
+                  ),
+                  validator: (String? value) {
+                    if (value == null || value.isEmpty) {
+                      return 'Please enter some text';
+                    }
+                    return null;
+                  },
+                )
+              ],
+            )),
             const Text(
               'Second Page',
               style: TextStyle(fontSize: 50),
